@@ -48,7 +48,7 @@ defmodule Sun.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [
-      {:latlong, "~> 0.1.1"},
+      {:latlong, git: "https://github.com/hilmer/latlong.git", tag: "master"},
       {:timex, "~> 3.7"},
       {:ex_doc, "~> 0.34", only: :dev}
     ]
