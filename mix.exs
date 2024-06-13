@@ -4,12 +4,12 @@ defmodule Sun.Mixfile do
   def project do
     [
       app: :solar,
-      version: "0.1.0",
+      version: "0.1.1",
       elixir: "~> 1.3",
       build_embedded: Mix.env == :prod,
       start_permanent: Mix.env == :prod,
       description: "Solar Event Calculator",
-      package: package,
+      package: package(),
       deps: deps(),
 
       # Docs
@@ -48,9 +48,9 @@ defmodule Sun.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [
-      {:latlong, "~> 0.1.0"},
-      {:timex, "~> 3.0"},
-      {:ex_doc, "~> 0.14", only: :dev}
+      {:latlong, "~> 0.1.1"},
+      {:timex, "~> 3.7"},
+      {:ex_doc, "~> 0.34", only: :dev}
     ]
   end
 end
