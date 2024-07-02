@@ -50,7 +50,7 @@ defmodule Solar.Events do
       _ -> opts[:date]
     end
     timezone = case opts[:timezone] do
-      :local -> Timex.local().timezone
+      :local -> Timex.local().time_zone
       nil -> Timex.local().time_zone
       _ -> opts[:timezone]
     end
